@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>tour to fantasy world </title>
+    <link href="dist/css/fixed-positioning.css" rel="stylesheet" type="text/css" />
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body >
+<div>
+    <div class="first-div" data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);">
+        <div class="Map_of_Edolas">
+        </div>
+    </div>
+
+
+    <div class="first-div" data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)">
+        <div class="some-text">
+            <p>Fruitcake toffee jujubes. Topping biscuit sesame snaps jelly caramels jujubes tiramisu fruitcake.
+                Marzipan tart lemon drops chocolate sesame snaps jelly beans.
+            </P>
+        </div>
+        <div class="some-other-text">
+            <p>Fruitcake toffee jujubes. Topping biscuit sesame snaps jelly caramels jujubes tiramisu fruitcake.
+                Marzipan tart lemon drops chocolate sesame snaps jelly beans.</P>
+        </div>
+    </div>
+
+    <div class="first-div" data-100p="transform:translate(0,100%);" data-200p="transform:translate(0,0%)">
+        <div class="some-text">
+            <p>Fruitcake toffee jujubes. Topping biscuit sesame snaps jelly caramels jujubes tiramisu fruitcake.
+                Marzipan tart lemon drops chocolate sesame snaps jelly beans.
+            </P>
+        </div>
+        <div class="some-other-text">
+            <p>Fruitcake toffee jujubes. Topping biscuit sesame snaps jelly caramels jujubes tiramisu fruitcake.
+                Marzipan tart lemon drops chocolate sesame snaps jelly beans.</P>
+        </div>
+    </div>
+
+
+    <div class="fourth-div" data-200p="transform:translate(0,100%);" data-300p="transform:translate(0,0%)">
+        <div class="bai">
+            <div class="dial"><p> itne paise mein itnaich milega !! :P </P></div>
+        </div>
+        <div class="left ">.</div>
+        <div class="right ">.</div>
+        <div id="slide-right-left">left-right</div>
+    </div>
+
+
+</div>
+ <div  data-200p="transform:translate(0,0%);" data-300p="transform:translate(0,-100%)" data-_box-300p="" data-_box-400p="transform:translate(0,-100%)">
+     <div id="thing" data-0="left[cos]:0%;top[sin]:0%;"data-400p="left:50%;top:50%;">
+     </div>
+ </div>
+
+
+<script type="text/javascript" src="dist/js/skrollr.min.js"></script>
+<script type="text/javascript" src="dist/js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#slide-right-left').click(function() {
+            var $lefty = $(".left");
+            $lefty.animate({
+                left: parseInt($lefty.css('left'),10) == 0 ?
+                        -$lefty.outerWidth() :
+                        0
+            });
+
+            var $marginLefty = $(".right");
+            $marginLefty.animate({
+                marginLeft: parseInt($marginLefty.css('marginLeft'),10) == 0 ?
+                        $marginLefty.outerWidth() :
+                        0
+            });
+            $(this).hide();
+        });
+    });
+    skrollr.init({
+
+        constants: {
+            box: 100
+        } ,
+        easing: {
+            sin: function(p) {
+                return (Math.sin(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+            },
+            cos: function(p) {
+                return (Math.cos(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+            }
+        }
+    });
+
+</script>
+</body>
+
+</html>

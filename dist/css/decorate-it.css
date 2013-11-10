@@ -1,0 +1,190 @@
+html, body {
+    width:100%;
+    height:100%;
+}
+body {
+    font-family:sans-serif;
+    font-size: 1.3em;
+    color: #670303;
+    font-weight: bold;
+    text-shadow: #ffffff 1px 1px;
+    background:url('../img/2531170_082144540823_2.jpg') 50% 0;
+}
+div{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:transparent center no-repeat;
+    background-size:cover;
+}
+.earth-land .journey {
+    margin:5px;
+    /* background:url('../img/abstract-wallpaper1.jpg');       */
+    width: 100%;
+}
+.earth-land .earth-land-info{
+    left:47%;
+    top:40%;
+}
+.earth-land .earth-land-map{
+    left:5%;
+    top:30%;
+    width: 500px;
+    height: 300px;
+    transform: rotate(-10deg);
+
+    border: 3px #e4a54e dashed;
+    background: url('../img/500px-Colored_Earth_Land_Map.png') no-repeat;
+}
+.earth-land .fiore-land-info{
+    left:15%;
+    top:40%;
+}
+.earth-land .fiore-land-map{
+    left:60%;
+    top:40%;
+    width: 500px;
+    height: 280px;
+    transform: rotate(5deg);
+    border: 3px #946936 dashed;
+    background: url('../img/78eee19528_77162563_o2.jpg') no-repeat;
+}
+ .start-journey{
+   font-size: 1.2em;
+   width: 75px;
+   height: 30px;
+   padding:5px;
+   left:90%;
+   background-color: #ffffff;
+}
+#guiding-butterfly{
+    width:413px;
+    height:295px;
+    background: url('../img/butterfly-animation-slower.gif');
+}
+.wel-come{
+    left: 46%;
+    top: 15%;
+    background: url("../img/title.png") no-repeat;
+}
+.fiore{
+    left: 20%;
+    top: 0%;
+    background: url("../img/fiore.png") no-repeat;
+}
+.tower-of-heaven{
+    left: 57%;
+    top: 80%;
+    background: url("../img/toh.png") no-repeat;
+}
+
+.happy{
+    width: 269px;
+    height: 358px;
+    background: url("../img/happy.png") no-repeat;
+}
+
+.earth-land .toh-info{
+    top:10%;
+    left:50%;
+}
+
+.earth-land .toh-map{
+    left:3%;
+    top:30%;
+    width: 600px;
+    height: 327px;
+    transform: rotate(-5deg);
+    border: 3px #946936 dashed;
+    background: url('../img/233791-the_tower_of_heaven_picture_2_super.jpg') no-repeat;
+}
+
+.dragon{
+    width: 462px;
+    height: 300px;
+    background: url("../img/drgon.png") no-repeat;
+}
+
+.earth-land .afo-info{
+    top:25%;
+    left:10%;
+}
+.allied-forces-Oracion{
+    left: 20%;
+    top: 10%;
+    background: url("../img/afo.png") no-repeat;
+}
+.hero{
+    top:20%;
+    left:80%;
+    width: 358px;
+    height: 561px;
+    background: url("../img/natsu.png") no-repeat;
+}
+.lucy{
+    top:20%;
+    left:80%;
+    width: 358px;
+    height: 561px;
+    background: url("../img/lucy.png") no-repeat;
+}
+.erza{
+    top:20%;
+    left:10%;
+    width: 820px;
+    height: 561px;
+    background: url("../img/erza.png") no-repeat;
+}
+.logo{
+    top:30%;
+    left:40%;
+    width: 820px;
+    height: 561px;
+    background: url("../img/Fairy_tail_logo_by_poderotaku-d4ubbh3.png") no-repeat;
+}
+.start-up{
+    left: 30%;
+    top: 10%;
+    background: url("../img/ready.png") no-repeat;
+}
+.get-ready{
+    left: 40%;
+    top: 80%;
+    background: url("../img/start.png") no-repeat;
+}
+.itne-pasie-mein{
+    left: 50%;
+    top: 30%;
+    font-size: 1.8em;
+    color: #D8A93D;
+}
+.bai{
+    left: 10%;
+    top: 20%;
+    background: url("../img/bai.png") no-repeat;
+}
+.center {
+    background:url('../img/466906-snapshot20110919204516.jpg') 0% 8% no-repeat;
+    height: 95%;
+    width: 100%;
+    left:2.5%;
+}
+.left {
+    background:url('../img/466906-snapshot20110919204516.jpg') 0% 8% no-repeat;
+    height: 95%;
+    width: 50%;
+    left:2.5%;
+}
+.right {
+    background:url('../img/466906-snapshot20110919204516.jpg') 107.5% 8% no-repeat;
+    height: 95%;
+    width: 50%;
+    left:50%
+}
+#click{
+    background:url('../img/Fairy_Tail.png') no-repeat;
+    left:43%;
+    top:70%;
+}
