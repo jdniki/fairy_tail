@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>Pausing</title>
+
+	<style type="text/css">
+	* {
+		margin:0;
+		padding:0;
+	}
+
+	html, body {
+		width:100%;
+		height:100%;
+	}
+
+	body {font-family:sans-serif;}
+
+	body > div {
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:transparent center no-repeat;
+		background-size:cover;
+	}
+
+	body > div:nth-child(1) {
+		background-image:url(dist/img/466906-snapshot20110919204516.jpg);
+	}
+
+	body > div:nth-child(2) {
+		background:#f0f0f0;
+		overflow:hidden;
+	}
+
+	body > div:nth-child(3) {
+		background-image:url(dist/img/drgon.png);
+	}
+
+	.box {
+		position:absolute;
+		left:0;
+		height:100%;
+		background:#09f;
+	}
+
+	p {margin:1em 0;}
+
+    .slide {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        margin-top:0px;
+        margin-left:0px;
+        background:url('dist/css/ANIMATED-wallpapers.jpg');
+    }
+    .box{
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        color: #333;
+        background-color: #29ff1c;
+    }
+    .left {
+        background:url('dist/css/BlueButterflyBlackDesktopWallpaper.jpg') 0% 50%;
+        height: 100%;
+    }
+    .right{
+        background:url('dist/css/BlueButterflyBlackDesktopWallpaper.jpg') 100% 50%;
+        left:50%;
+        height: 100%;
+    }
+        .blurred{
+            color: #00ff00;
+            font-size: 1.8em;
+        }
+	</style>
+</head>
+
+<body>
+	<div data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);">
+
+	</div>
+
+	<div data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-200p="transform:translate(0,-100%)">
+		<div class="box" data-0p="width:0%;" data-100p="width:100%"></div>
+	</div>
+
+
+    <div data-100p="transform:translate(0,100%);" data-200p="transform:translate(0,0%)" data-300p="transform:translate(0,-100%);">
+        <div class="toh-info">
+            <p>The towers were a series of structures that Dark Mages tried</p><p>
+            to construct and use in order to revive the most powerful</p><p>
+            Dark Mage in history, Zeref. A cult that worshiped the  Black Arts </p><p>
+            invested a large sum of money to initiate the building of</p><p>
+            the R-System. There were seven towers originally,but the</p><p>
+            Magic Council put an end to their construction, though never</p><p>
+            found the 8th tower off the coast of the Caelum Kingdom.</p>
+        </div>
+    </div>
+
+    <div data-200p="transform:translate(0,100%);" data-300p="transform:translate(0,0%)" data-400p="transform:translate(0,-100%);">
+        <div class="afo-info">
+            <p> While searching for the Oración Seis, the rest of the Allied Forces see the Christina</p><p>
+            fly overhead. Although amazed by its regality, it soon falls from the sky, crashing</p><p>
+            into ground. Through the haze of the crash, the Oración Seis appear before the Allied</p><p>
+            Forces, and their leader, Brain, declares that maggots have gathered before them;</p><p>
+            the other members then comment: Angel states that their thought process is too simple,</p><p>
+            Cobra taunts the alliance by mentioning that he can hear them trembling, whilst Racer</p><p>
+            informs them that they like to finish their jobs as quickly as possible and that they're</p><p>
+            in their way; Hoteye states that money is everything, earning him a reprimanding from</p><p>
+            his guildmates. While Lucy notices that one of the Oración Seis is on a floating rug,</p><p>
+            sleeping, Erza mutters that she never expected them to make the first move.
+        </p>
+        </div>
+    </div>
+
+    <div  data-300p="transform:translate(0,100%);" data-400p="transform:translate(0,0%) " data-500p="transform:translate(0,-100%);">
+
+    </div>
+
+	<div data-400p="transform:translate(0,100%);" data-500p="transform:translate(0,0%)">
+        <div id="#" class="slide">
+            <div class="left box">.</div>
+            <div class="right box">.</div>
+
+        </div>
+        <div class="blurred">
+            <span class="slide-right-left">left-right</span>
+        </div>
+	</div>
+    <div id="guiding-butterfly" data-0="left[cos]:0%;top[sin]:0%;" data-500p="left:50%;top:50%;"></div>
+
+    <script type="text/javascript" src="dist/js/skrollr.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery-1.10.2.js"></script>
+	<script type="text/javascript">
+	skrollr.init({
+		constants: {
+			//fill the box for a "duration" of 150% of the viewport (pause for 150%)
+			//adjust for shorter/longer pause
+			box: 150
+		},
+        easing: {
+            sin: function(p) {
+                return (Math.sin(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+            },
+            cos: function(p) {
+                return (Math.cos(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+            }
+        }
+	});
+    $(document).ready(function() {
+        $('.slide-right-left').click(function() {
+
+            var $lefty = $(".left");
+            $lefty.animate({
+                left: parseInt($lefty.css('left'),10) == 0 ?
+                        -$lefty.outerWidth() :
+                        0
+            });
+
+            var $marginLefty = $(".right");
+            $marginLefty.animate({
+                marginLeft: parseInt($marginLefty.css('marginLeft'),10) == 0 ?
+                        $marginLefty.outerWidth() :
+                        0
+            });
+        });
+    });
+	</script>
+</body>
+
+</html>

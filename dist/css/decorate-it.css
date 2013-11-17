@@ -156,35 +156,40 @@ div{
 }
 .itne-pasie-mein{
     left: 50%;
-    top: 30%;
+    top: 40%;
     font-size: 1.8em;
     color: #D8A93D;
 }
 .bai{
-    left: 10%;
+    left: 5%;
     top: 20%;
     background: url("../img/bai.png") no-repeat;
 }
 .center {
-    background:url('../img/466906-snapshot20110919204516.jpg') 0% 8% no-repeat;
+    background:url('../img/starsdpassion-3d-rendering.jpg') 0% 8% no-repeat;
     height: 95%;
-    width: 100%;
-    left:2.5%;
+    width: 110%;
+    left:0%
+}
+.door{
+    height: 95%;
+    width: 110%;
+    left:0%;
 }
 .left {
-    background:url('../img/466906-snapshot20110919204516.jpg') 0% 8% no-repeat;
-    height: 95%;
+    background:url('../img/starsdpassion-3d-rendering.jpg') 0% 8% no-repeat;
+    height: 100%;
     width: 50%;
-    left:2.5%;
+    left:0%;
 }
 .right {
-    background:url('../img/466906-snapshot20110919204516.jpg') 107.5% 8% no-repeat;
-    height: 95%;
+    background:url('../img/starsdpassion-3d-rendering.jpg') 63.5% 8% no-repeat;
+    height: 100%;
     width: 50%;
     left:50%
 }
 #click{
     background:url('../img/Fairy_Tail.png') no-repeat;
-    left:43%;
-    top:70%;
+    left:45%;
+    top:20%;
 }
