@@ -1,0 +1,39 @@
+*{
+margin: 10px
+}
+
+#f1_container {
+  position: fixed;
+  width: 2680px;
+  height: 750px;
+  perspective: 1000;
+  z-index:1;
+  :nth-child(1) {
+    background-color: #d2b877;
+  }
+  :nth-child(2) {
+     background-color: #d2d8ba;
+   }
+  :nth-child(3) {
+     background-color: #0077b3;
+  }
+  :nth-child(4) {
+      background-color: #da4f49;
+  }
+
+}
+.f1_card {
+  transform: rotateY(0deg);
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 3.0s linear;
+  transform-origin: left;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}

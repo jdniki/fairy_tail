@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS transforms sliding smooth</title>
+    <link href="files/bootstrap.css" rel="stylesheet">
+    <link href="files/style_slide.less"  type="text/less" rel="stylesheet">
+    <script src="js/less-1.5.0.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div id="carousel"></div>
+
+</div>
+</body>
+<script src="../dist/js/jquery-2.0.3.js"></script>
+<script>
+    $(document).ready(function() {
+        var panelCount = 10,
+                theta = ( 360 / panelCount ),
+                theta0 = ( 360 / panelCount );
+        //beta =  Math.round( ($(".figure:nth-chid(1)").width() / 2 ) / Math.tan( Math.PI / panelCount));
+
+        var carousel = $('#carousel');
+        var  navigation = $('#navigation');
+        var i;
+        for( i = 0 ; i < panelCount ; i++){
+            carousel.append('<div class="figure"></div>') ;
+            navigation.append(' <span class="click selected"> '+(i+1)+'</span>') ;
+        }
+        navigation.append(' <div class="pre-next" data-increment="-1">next</div>') ;
+
+        navigation.on('click', 'div', function(){
+            var increment = this.getAttribute('data-increment');
+            theta0 += ( 360 / panelCount ) * increment * -1;
+            carousel.css("transform","rotateY("+ -theta0+"deg)");
+        });
+
+        navigation.on('click', 'span', function(){
+            theta0 =  $(this).index() * theta;
+            carousel.css("transform","rotateY("+(( $(this).index()) * -theta)+"deg)");
+            $(".click").removeClass("selected");
+            $(this).addClass("selected");
+        });
+
+
+        $(".figure").click(function() {
+            $(".figure").toggleClass("trans");
+        });
+
+    });
+</script>
+</html>

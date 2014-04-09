@@ -1,3 +1,4 @@
+
 html, body {
     width:100%;
     height:100%;
@@ -8,7 +9,7 @@ body {
     color: #670303;
     font-weight: bold;
     text-shadow: #ffffff 1px 1px;
-    background:url('../img/2531170_082144540823_2.jpg') 50% 0;
+    background:url(http://s6.postimg.org/fiehegc3l/2531170_082144540823_2.jpg) 50% 0;
 }
 div{
     position:fixed;
@@ -36,7 +37,7 @@ div{
     transform: rotate(-10deg);
 
     border: 3px #e4a54e dashed;
-    background: url('../img/500px-Colored_Earth_Land_Map.png') no-repeat;
+    background: url(http://s6.postimg.org/k4609288x/500px_Colored_Earth_Land_Map.png) no-repeat;
 }
 .earth-land .fiore-land-info{
     left:15%;
@@ -49,41 +50,43 @@ div{
     height: 280px;
     transform: rotate(5deg);
     border: 3px #946936 dashed;
-    background: url('../img/78eee19528_77162563_o2.jpg') no-repeat;
+    background: url('http://s15.postimg.org/dcs16slxn/78eee19528_77162563_o2.jpg') no-repeat;
 }
- .start-journey{
-   font-size: 1.2em;
-   width: 75px;
-   height: 30px;
-   padding:5px;
-   left:90%;
-   background-color: #ffffff;
+.start-journey{
+    font-size: 1.2em;
+    width: 75px;
+    height: 30px;
+    padding:5px;
+    left:90%;
+    background-color: #ffffff;
 }
 #guiding-butterfly{
     width:413px;
     height:295px;
-    background: url('../img/butterfly-animation-slower.gif');
+}
+#guiding-butterfly > div:nth-child(1) {
+    background: url('http://s6.postimg.org/yh41l4hmp/butterfly_animation_slower.gif');
 }
 .wel-come{
     left: 46%;
     top: 15%;
-    background: url("../img/title.png") no-repeat;
+    background: url(http://s6.postimg.org/zal8rhd1d/title.png) no-repeat;
 }
 .fiore{
     left: 20%;
     top: 0%;
-    background: url("../img/fiore.png") no-repeat;
+    background: url(http://s6.postimg.org/o1xvc7kg1/fiore.png) no-repeat;
 }
 .tower-of-heaven{
     left: 57%;
     top: 80%;
-    background: url("../img/toh.png") no-repeat;
+    background: url(http://s6.postimg.org/dpg63vgap/toh.png) no-repeat;
 }
 
 .happy{
     width: 269px;
     height: 358px;
-    background: url("../img/happy.png") no-repeat;
+    background: url(http://s6.postimg.org/ra2cp96pt/happy.png) no-repeat;
 }
 
 .earth-land .toh-info{
@@ -98,13 +101,13 @@ div{
     height: 327px;
     transform: rotate(-5deg);
     border: 3px #946936 dashed;
-    background: url('../img/233791-the_tower_of_heaven_picture_2_super.jpg') no-repeat;
+    background: url(http://s6.postimg.org/5smi45q2p/233791_the_tower_of_heaven_picture_2_super.jpg) no-repeat;
 }
 
 .dragon{
     width: 462px;
     height: 300px;
-    background: url("../img/drgon.png") no-repeat;
+    background: url(http://s6.postimg.org/5oxa1n9z5/drgon.png) no-repeat;
 }
 
 .earth-land .afo-info{
@@ -114,82 +117,102 @@ div{
 .allied-forces-Oracion{
     left: 20%;
     top: 10%;
-    background: url("../img/afo.png") no-repeat;
+    background: url(http://s6.postimg.org/5wgbkevk1/afo.png) no-repeat;
 }
 .hero{
     top:20%;
     left:80%;
     width: 358px;
     height: 561px;
-    background: url("../img/natsu.png") no-repeat;
+    background: url(http://s6.postimg.org/qzzfjnhhd/natsu.png) no-repeat;
 }
 .lucy{
     top:20%;
     left:80%;
     width: 358px;
     height: 561px;
-    background: url("../img/lucy.png") no-repeat;
+    background: url(http://s6.postimg.org/4mrowugjl/lucy.png) no-repeat;
 }
 .erza{
     top:20%;
     left:10%;
     width: 820px;
     height: 561px;
-    background: url("../img/erza.png") no-repeat;
+    background: url(http://s6.postimg.org/b1m4frxvl/erza.png) no-repeat;
 }
 .logo{
     top:30%;
     left:40%;
     width: 820px;
     height: 561px;
-    background: url("../img/Fairy_tail_logo_by_poderotaku-d4ubbh3.png") no-repeat;
+    background: url(http://s6.postimg.org/omcwewdoh/Fairy_tail_logo_by_poderotaku_d4ubbh3.png) no-repeat;
 }
 .start-up{
     left: 30%;
     top: 10%;
-    background: url("../img/ready.png") no-repeat;
+    background: url(http://s6.postimg.org/d7l0o0qpt/ready.png) no-repeat;
 }
 .get-ready{
     left: 40%;
     top: 80%;
-    background: url("../img/start.png") no-repeat;
+    background: url(http://s6.postimg.org/53cwja4ap/start.png) no-repeat;
 }
-.itne-pasie-mein{
-    left: 50%;
-    top: 40%;
-    font-size: 1.8em;
-    color: #D8A93D;
+
+.blurred{
+    position :absolute;
+    margin-top:35%;
+    margin-left:45%;
+    width: 130px;
+    height:130px;
+    text-align: center;
+    background:url('http://s6.postimg.org/5wkwy5kxp/Fairy_Tail.png');
 }
-.bai{
-    left: 5%;
-    top: 20%;
-    background: url("../img/bai.png") no-repeat;
+.bai {
+    width: 90%;
+    height: 90%;
+    margin-top:18%;
+    margin-left:3%;
+    text-align: right;
+    color: #e4a54e;
+    font-size: 2em;
+    text-shadow: 1px 1px #670303;
+    position: absolute;
+    background:url('http://s6.postimg.org/osm048xfl/bai.png') no-repeat;
 }
+.bai p{
+    margin-right: 10%;
+}
+.slide {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin-top:3%;
+    margin-left:5%;
+    /* background:url('http://www.hdwallpaperspot.com/wp-content/uploads/2013/04/ANIMATED-wallpapers.jpg');        */
+}
+
 .center {
-    background:url('../img/starsdpassion-3d-rendering.jpg') 0% 8% no-repeat;
-    height: 95%;
-    width: 110%;
-    left:0%
+    width: 90%;
+    height: 90%;
+    margin-top:3%;
+    margin-left:5%;
+    position: absolute;
+    background:url('http://s6.postimg.org/77so6mgjl/FAIRY_TAIL_155_Large_02.jpg');
 }
-.door{
-    height: 95%;
-    width: 110%;
-    left:0%;
-}
-.left {
-    background:url('../img/starsdpassion-3d-rendering.jpg') 0% 8% no-repeat;
-    height: 100%;
+.box{
+    position: absolute;
+    left: 0;
     width: 50%;
-    left:0%;
+    height: 50%;
+    color: #333;
+    background-color: #29ff1c;
 }
-.right {
-    background:url('../img/starsdpassion-3d-rendering.jpg') 63.5% 8% no-repeat;
+.slide .left {
+    background:url('http://s6.postimg.org/77so6mgjl/FAIRY_TAIL_155_Large_02.jpg') 0% 50%;
     height: 100%;
-    width: 50%;
-    left:50%
 }
-#click{
-    background:url('../img/Fairy_Tail.png') no-repeat;
-    left:45%;
-    top:20%;
+.slide .right{
+    background:url('http://s6.postimg.org/77so6mgjl/FAIRY_TAIL_155_Large_02.jpg') 100% 50%;
+    left:50%;
+    height: 100%;
 }

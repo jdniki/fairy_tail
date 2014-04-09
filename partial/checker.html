@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I'M BORED! again -_- </title>
+    <link href="dist/css/fixed-positioning.css" rel="stylesheet" type="text/css" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px   ;
+        }
+        html, body {
+            width:100%;
+            height:100%;
+            font-family:sans-serif;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            transform:skew(-5deg,-5deg);
+            -webkit-transform: skew(-5deg,-5deg);
+            transform-style: preserve-3d;
+            transition: all 0.1s linear;
+        }
+
+        .box:hover{
+            transform:rotateX(120deg);
+            transform: rotateY(180deg);
+        }
+        .grey{
+            background-color: #e4a54e;
+            background: url(http://s6.postimg.org/g3yuwths1/78eee19528_77162563_o2.jpg);
+        }
+        .red{
+            background-color: #670303;
+            background: url(http://s6.postimg.org/59qlmddfl/Map_of_Edolas.jpg);
+        }
+        .blue{
+            background-color: cornflowerblue;
+            background: url(http://s6.postimg.org/fiehegc3l/2531170_082144540823_2.jpg);
+        }
+        .green{
+            background-color: greenyellow;
+            background: url(http://s6.postimg.org/k4609288x/500px_Colored_Earth_Land_Map.png);
+        }
+        .third{
+            margin-left: 220px;
+            margin-top: -20px;
+        }
+        .second{
+            margin-left: 110px;
+            margin-top: -10px;
+        }
+        .four{
+            margin-left: 330px;
+            margin-top: -30px;
+        }
+        .checkboard{
+            transform:skew(-5deg,-5deg);
+            -webkit-transform: skew(-5deg,-5deg);
+            height :430px;
+            width: 430px;
+            margin-left: 90px;
+            margin-top: 100px;
+            position: fixed;
+            font-size: 1.2em;
+            color: #ffffff;
+            background: url(http://s6.postimg.org/6aqubhuf5/starsdpassion_3d_rendering.jpg);
+        }
+        .row-1{
+            margin-left: 110px;
+            margin-top: 120px;
+        }
+        .row-2{
+
+            margin-left: 100px;
+            margin-top: 230px;
+        }
+        .row-3{
+
+            margin-left: 90px;
+            margin-top: 340px;
+        }
+        .row-4{
+
+            margin-left: 80px;
+            margin-top: 450px;
+        }
+
+        .row-1 .second{
+            background-position: -110px 0px;
+        }
+        .row-1 .third{
+            background-position: -230px 0px;
+        }
+        .row-1 .four{
+            background-position: -320px 0px;
+        }
+
+        .row-2 .first{
+            background-position: 0px -110px;
+        }
+        .row-2 .second{
+            background-position: -110px -110px;
+        }
+        .row-2 .third{
+            background-position: -230px -110px;
+        }
+        .row-2 .four{
+            background-position: -320px -110px;
+        }
+
+        .row-3 .first{
+            background-position: 0px -230px;
+        }
+        .row-3 .second{
+            background-position: -110px -230px;
+        }
+        .row-3 .third{
+            background-position: -230px -230px;
+        }
+        .row-3 .four{
+            background-position: -320px -230px;
+        }
+
+        .row-4 .first{
+            background-position: 0px -320px;
+        }
+        .row-4 .second{
+            background-position: -110px -320px;
+        }
+        .row-4 .third{
+            background-position: -230px -320px;
+        }
+        .row-4 .four{
+            background-position: -320px -320px;
+        }
+    </style>
+
+</head>
+<body>
+         <div class="checkboard" data-300p="opacity:0" data-350p="opacity:1">
+         bwahhhhh!</div>
+             <div class="row-1 " >
+                 <div class="box green first" data-0p="height:0px;" data-100p="height:100px" data-200p="height:0px"></div>
+                 <div class="box blue first" data-0p="height:100px;" data-100p="height:0px"></div>
+                 <div class="box red first" data-100p="height:0px;" data-200p="height:100px" data-300p="height:0px;"></div>
+                 <div class="box grey first" data-200p="height:0px;" data-300p="height:100px" data-400p="height:0px"></div>
+
+                 <div class="box red second" data-0p="width:100px;" data-100p="width:0px"></div>
+                 <div class="box grey second" data-0p="width:0px;" data-100p="width:100px" data-200p="width:0px"></div>
+                 <div class="box green second" data-100p="width:0px;" data-200p="width:100px" data-300p="width:0px"></div>
+                 <div class="box blue second"  data-200p="width:0px" data-300p="width:100px;" data-350p="width:0px"></div>
+
+
+                 <div class="box green third" data-0p="height:0px;" data-100p="height:100px" data-200p="height:0px"></div>
+                 <div class="box blue third" data-0p="height:100px;" data-100p="height:0px"></div>
+                 <div class="box red third" data-100p="height:0px;" data-200p="height:100px" data-300p="height:0px;"></div>
+                 <div class="box grey third" data-200p="height:0px;" data-300p="height:100px" data-400p="height:0px"></div>
+
+                 <div class="box red four" data-0p="width:100px;" data-100p="width:0px"></div>
+                 <div class="box grey four" data-0p="width:0px;" data-100p="width:100px" data-200p="width:0px"></div>
+                 <div class="box green four" data-100p="width:0px;" data-200p="width:100px" data-300p="width:0px"></div>
+                 <div class="box blue four"  data-200p="width:0px" data-300p="width:100px;" data-350p="width:0px"></div>
+             </div>
+
+
+             <div class="row-2 " >
+
+                 <div class="box green second" data-0p="height:0px;" data-100p="height:100px" data-200p="height:0px"></div>
+                 <div class="box blue second" data-0p="height:100px;" data-100p="height:0px"></div>
+                 <div class="box red second" data-100p="height:0px;" data-200p="height:100px" data-300p="height:0px;"></div>
+                 <div class="box grey second" data-200p="height:0px;" data-300p="height:100px" data-400p="height:0px"></div>
+
+                 <div class="box red first" data-0p="width:100px;" data-100p="width:0px"></div>
+                 <div class="box grey first" data-0p="width:0px;" data-100p="width:100px" data-199p="width:0px"></div>
+                 <div class="box green first" data-100p="width:0px;" data-200p="width:100px" data-300p="width:0px"></div>
+                 <div class="box blue first"  data-200p="width:0px" data-300p="width:100px;" data-350p="width:0px"></div>
+
+                 <div class="box green four" data-0p="height:0px;" data-100p="height:100px" data-200p="height:0px"></div>
+                 <div class="box blue four" data-0p="height:100px;" data-100p="height:0px"></div>
+                 <div class="box red four" data-100p="height:0px;" data-200p="height:100px" data-300p="height:0px;"></div>
+                 <div class="box grey four" data-200p="height:0px;" data-300p="height:100px" data-400p="height:0px"></div>
+
+
+                 <div class="box red third" data-0p="width:100px;" data-100p="width:0px"></div>
+                 <div class="box grey third" data-0p="width:0px;" data-100p="width:100px" data-199p="width:0px"></div>
+                 <div class="box green third" data-100p="width:0px;" data-200p="width:100px" data-300p="width:0px"></div>
+                 <div class="box blue third"  data-200p="width:0px" data-300p="width:100px;" data-350p="width:0px"></div>
+
+             </div>
+
+             <div class="row-3 " >
+                 <div class="box green first" data-0p="height:0px;" data-100p="height:100px" data-200p="height:0px"></div>
+                 <div class="box blue first" data-0p="height:100px;" data-100p="height:0px"></div>
+                 <div class="box red first" data-100p="height:0px;" data-200p="height:100px" data-300p="height:0px;"></div>
+                 <div class="box grey first" data-200p="height:0px;" data-300p="height:100px" data-400p="height:0px"></div>
+
+                 <div class="box red second" data-0p="width:100px;" data-100p="width:0px"></div>
+                 <div class="box grey second" data-0p="width:0px;" data-100p="width:100px" data-200p="width:0px"></div>
+                 <div class="box green second" data-100p="width:0px;" data-200p="width:100px" data-300p="width:0px"></div>
+                 <div class="box blue second"  data-200p="width:0px" data-300p="width:100px;" data-350p="width:0px"></div>
+
+
+                 <div class="box green third" data-0p="height:0px;" data-100p="height:100px" data-200p="height:0px"></div>
+                 <div class="box blue third" data-0p="height:100px;" data-100p="height:0px"></div>
+                 <div class="box red third" data-100p="height:0px;" data-200p="height:100px" data-300p="height:0px;"></div>
+                 <div class="box grey third" data-200p="height:0px;" data-300p="height:100px" data-400p="height:0px"></div>
+
+
+                 <div class="box red four" data-0p="width:100px;" data-100p="width:0px"></div>
+                 <div class="box grey four" data-0p="width:0px;" data-100p="width:100px" data-200p="width:0px"></div>
+                 <div class="box green four" data-100p="width:0px;" data-200p="width:100px" data-300p="width:0px"></div>
+                 <div class="box blue four"  data-200p="width:0px" data-300p="width:100px;" data-350p="width:0px"></div>
+             </div>
+
+             <div class="row-4 " >
+                 <div class="box green second" data-0p="height:0px;" data-100p="height:100px" data-200p="height:0px"></div>
+                 <div class="box blue second" data-0p="height:100px;" data-100p="height:0px"></div>
+                 <div class="box red second" data-100p="height:0px;" data-200p="height:100px" data-300p="height:0px;"></div>
+                 <div class="box grey second" data-200p="height:0px;" data-300p="height:100px" data-400p="height:0px"></div>
+
+                 <div class="box red first" data-0p="width:100px;" data-100p="width:0px"></div>
+                 <div class="box grey first" data-0p="width:0px;" data-100p="width:100px" data-199p="width:0px"></div>
+                 <div class="box green first" data-100p="width:0px;" data-200p="width:100px" data-300p="width:0px"></div>
+                 <div class="box blue first"  data-200p="width:0px" data-300p="width:100px;" data-350p="width:0px"></div>
+
+                 <div class="box green four" data-0p="height:0px;" data-100p="height:100px" data-200p="height:0px"></div>
+                 <div class="box blue four" data-0p="height:100px;" data-100p="height:0px"></div>
+                 <div class="box red four" data-100p="height:0px;" data-200p="height:100px" data-300p="height:0px;"></div>
+                 <div class="box grey four" data-200p="height:0px;" data-300p="height:100px" data-400p="height:0px"></div>
+
+
+                 <div class="box red third" data-0p="width:100px;" data-100p="width:0px"></div>
+                 <div class="box grey third" data-0p="width:0px;" data-100p="width:100px" data-199p="width:0px"></div>
+                 <div class="box green third" data-100p="width:0px;" data-200p="width:100px" data-300p="width:0px"></div>
+                 <div class="box blue third"  data-200p="width:0px" data-300p="width:100px;" data-350p="width:0px"></div>
+
+             </div>
+
+
+
+<script type="text/javascript" src="dist/js/skrollr.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    skrollr.init({
+
+        constants: {
+            box: 100
+        }
+    });
+</script>
+</body>
+</html>

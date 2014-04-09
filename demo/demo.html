@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CSS transforms</title>
+    <link href="files/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+    </style>
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="../dist/js/jquery-2.0.3.js"></script>
+
+</head>
+
+<body onload="prettyPrint()" data-spy="scroll">
+
+<section class="cubeCarousel">
+
+    <style>
+        #controls, #transparency {
+            text-align:center;
+        }
+        #controls span {
+            padding-right:2em;
+            cursor:pointer;
+        }
+
+        #cubeCarousel {
+            -webkit-perspective: 800;
+            -moz-perspective: 800px;
+            -ms-perspective: 800;
+            perspective: 800;
+
+            -webkit-perspective-origin: 50% 100px;
+            -moz-perspective-origin: 50% 100px;
+            -ms-perspective-origin: 50% 100px;
+            perspective-origin: 50% 100px;
+
+            margin:100px auto 20px auto;
+            width:1000px;
+            height:1000px;
+        }
+
+        #cubeCarousel #cubeSpinner {
+            position: relative;
+            margin: 0 auto;
+            height: 400px;
+            width: 450px;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+
+            -webkit-transform-origin: 50% 100px 0;
+            -moz-transform-origin: 50% 100px 0;
+            -ms-transform-origin: 50% 100px 0;
+            transform-origin: 50% 100px 0;
+
+            -webkit-transition:all 1.0s ease-in-out;
+            -moz-transition:all 1.0s ease-in-out;
+            -ms-transition:all 1.0s ease-in-out;
+            transition:all 1.0s ease-in-out;
+
+        }
+
+        #cubeCarousel .face {
+            position: absolute;
+            height: 300px;
+            width: 450px;
+            padding: 0px;
+        }
+
+
+        #cubeSpinner .one {
+            -webkit-transform: translateZ(390px);
+            -moz-transform: translateZ(390px);
+            -ms-transform: translateZ(390px);
+            transform: translateZ(390px);
+        }
+
+        #cubeSpinner .two {
+            -webkit-transform: rotateY(60deg) translateZ(390px);
+            -moz-transform: rotateY(60deg) translateZ(390px);
+            -ms-transform: rotateY(60deg) translateZ(390px);
+            transform: rotateY(60deg) translateZ(390px);
+        }
+
+        #cubeSpinner .three {
+            -webkit-transform: rotateY(120deg) translateZ(390px);
+            -moz-transform: rotateY(120deg) translateZ(390px);
+            -ms-transform: rotateY(120deg) translateZ(390px);
+            transform: rotateY(120deg) translateZ(390px);
+        }
+
+        #cubeSpinner .four {
+            -webkit-transform: rotateY(-60deg) translateZ(390px);
+            -moz-transform: rotateY(-60deg) translateZ(390px);
+            -ms-transform: rotateY(-60deg) translateZ(390px);
+            transform: rotateY(-60deg) translateZ(390px);
+        }
+
+        #cubeSpinner .five {
+            -webkit-transform: rotateY(-120deg) translateZ(390px);
+            -moz-transform: rotateY(-120deg) translateZ(390px);
+            -ms-transform: rotateY(-120deg) translateZ(390px);
+            transform: rotateY(-120deg) translateZ(390px);
+        }
+
+        #cubeSpinner .six {
+            -webkit-transform: translateZ(-390px);
+            -moz-transform: translateZ(-390px);
+            -ms-transform: translateZ(-390px);
+            transform: translateZ(-390px);
+        }
+
+        .trans {
+            opacity:0.7;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function() {
+
+            $("#controls").on('click', 'span', function(){
+                $("#cubeSpinner").css("transform","rotateY("+($(this).index() * -60)+"deg)");
+                $("#controls span").removeClass("selected");
+                $(this).addClass("selected");
+            });
+
+            $("#transparency").click(function() {
+                $("#cubeSpinner img").toggleClass("trans");
+                $(this).toggleClass("selected");
+            });
+
+        });
+    </script>
+    <p id="controls">
+        <span class="selected">Image 1</span>
+        <span>Image 2</span>
+        <span>Image 3</span>
+        <span>Image 4</span>
+        <span>Image 5</span>
+        <span>Image 6</span>
+    </p>
+    <p id="transparency">Click me to toggle transparency</p>
+
+    <div id="cubeCarousel">
+        <div id="cubeSpinner">
+
+            <div class="face one">
+                <img src="images/Cirques.jpg" />
+            </div>
+            <div class="face two">
+                <img src="images/Clown%20Fish.jpg" />
+            </div>
+            <div class="face three">
+                <img src="images/Stones.jpg" />
+            </div>
+            <div class="face five">
+                <img src="images/Clown%20Fish.jpg" />
+            </div>
+            <div class="face four">
+                <img src="images/Summit.jpg" />
+            </div>
+            <div class="face six">
+                <img src="images/Stones.jpg" />
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+</body>
+</html>
+<!-- Cached on Wed, 06 Nov 2013 20:08:49 +0000 -->

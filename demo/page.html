@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page flip</title>
+    <link href="files/bootstrap.css" rel="stylesheet">
+    <link href="files/style.less"  type="text/less" rel="stylesheet">
+
+
+</head>
+<body>
+<div id="navigation">
+    <div class="pre-next" data-increment="1">prev</div>
+    <div class="pre-next" data-increment="0">next</div>
+</div>
+<div id="f1_container">
+    <div  class="f1_card shadow">
+        <div class="front face">
+            <img src="images/Clown%20Fish.jpg"/>
+        </div>
+        <div class="back face center">
+            <img src="images/Cirques.jpg"/>
+        </div>
+    </div>
+   <!-- <div  class="f1_card shadow">
+        <div class="front face">
+            <img src="images/Stones.jpg"/>
+        </div>
+        <div class="back face center">
+            <img src="images/Summit.jpg"/>
+        </div>
+    </div>
+
+    <div  class="f1_card shadow">
+        <div class="front face">
+            <img src="images/Clown%20Fish.jpg"/>
+        </div>
+        <div class="back face center">
+            <img src="images/Cirques.jpg"/>
+        </div>
+    </div>    -->
+
+
+</div>
+
+
+</body>
+<script src="../dist/js/jquery-2.0.3.js"></script>
+<script>
+    $(document).ready(function() {
+        var click =  $('#navigation');
+
+        var arey =   $(".f1_card");
+        var counter = arey.length;
+        click.on("click" ,"div", function(){
+            var x = this.getAttribute("data-increment");
+            $(arey[--counter]).css("transform","rotateY("+ (x * 180 )+"deg)");
+            if(x){
+              counter++;
+            }else
+
+
+            if(counter <= 0){
+                counter = 0;
+            }
+        }) ;
+
+    });
+</script>
+
+<!-- #f1_container:hover #f1_card {
+  transform: rotateY(-180deg);
+}-->
+
+</html>
